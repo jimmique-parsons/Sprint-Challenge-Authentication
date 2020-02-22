@@ -16,7 +16,7 @@ describe('POST /register', () => {
     it('should return a 500 error', async (done) => {
         request(router)
             .post('/register')
-            .send({ username: 'user' })
+            .send({ username: 'emanresu' })
             .set('Accept', 'application/json')
             .expect(500, done);
     });
